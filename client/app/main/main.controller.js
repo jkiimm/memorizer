@@ -4,6 +4,7 @@ angular.module('memorizerApp')
   .controller('MainCtrl', function ($scope, $http, socket) {
     $scope.awesomeThings = [];
     $scope.openedIndex = null;
+    $scope.quantity = 50;
 
     // Fisher–Yates shuffle algorithm
     var shuffleArray = function(array) {
